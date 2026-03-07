@@ -21,6 +21,7 @@
 
 ## Блог
 Заметки и советы по вёрстке и скриптам для Adobe InDesign: [vladossipov.ru](https://vladossipov.ru)
+[Телеграм канал](https://t.me/printgeek)
 
 ## Контакты
 Email <vlad.ossipov@gmail.com>  
