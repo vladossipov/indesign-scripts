@@ -4,15 +4,12 @@
 
 A collection of Adobe InDesign scripts for editorial and book layout workflows.
 
----
 
 ## Scripts
 
 ### [CaptionAssembler](CaptionAssembler/)
 
 Automatically assembles inline graphics and their caption paragraphs into a properly grouped figure — ready for professional layout.
-
----
 
 *More scripts coming soon.*
 
