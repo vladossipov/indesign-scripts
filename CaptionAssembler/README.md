@@ -26,6 +26,8 @@ All paragraph styles from the original caption block are preserved exactly.
 
 **Before** — inline graphic followed by caption paragraphs in the text flow:
 
+![Before](https://i.ibb.co/yF3FR7Dv/before.png)
+
 ```
 [inline image]
 Fig. 2. Remains of attachment organs...        ← paragraph style: "caption"
@@ -35,6 +37,8 @@ Legend: (a) — sample CU25/6–16; (b)...        ← paragraph style: "caption 
 ```
 
 **After** — inline group with figure + styled caption, caption paragraphs removed from story:
+
+![After](https://i.ibb.co/Fk42RWHn/after.png)
 
 ```
 [inline group: image + caption frame with all styles preserved]
@@ -77,7 +81,7 @@ Your selections are saved automatically and restored on next launch.
 
 ## Dialog
 
-![CaptionAssembler dialog](dialog_screenshot.png)
+![CaptionAssembler dialog](https://i.ibb.co/zh1qpLMS/Screenshot-2026-03-08-at-03-20-13.jpg)
 
 - **Caption Block Styles** — all paragraph styles that belong to a caption block. The block ends at the first paragraph with a different style.
 - **Image** — object style applied to the graphic frame
