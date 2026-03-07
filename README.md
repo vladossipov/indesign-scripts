@@ -21,6 +21,7 @@ Found a bug? [Open an issue](https://github.com/vladossipov/indesign-scripts/iss
 
 ## Blog
 Tips, tricks and notes on writing scripts for Adobe InDesign: [vladossipov.ru](https://vladossipov.ru)
+[Telegram channel](https://t.me/printgeek)
 
 ## Contacts
 Email <vlad.ossipov@gmail.com>  
