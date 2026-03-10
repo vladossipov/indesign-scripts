@@ -68,7 +68,7 @@ Legend: (a) — sample CU25/6–16; (b)...        ← paragraph style: "caption 
 
 ## Usage
 
-1. Click on the text frame containing your inline graphics
+1. Click on the text frame containing your inline graphics, or select text
 2. Run the script from the Scripts panel
 3. In the dialog:
    - Select the **paragraph styles** that form your caption block (multi-select with Cmd/Ctrl+click)
