@@ -11,7 +11,7 @@ A collection of Adobe InDesign scripts for editorial and book layout workflows.
 Automatically assembles inline graphics and their caption paragraphs into a properly grouped figure — ready for professional layout.
 
 ### [CharStyle2Hyperlink](CharStyle2Hyperlink/)
-Finds all text runs with a given character style and creates proper hyperlinks from them in one click.
+Сonverts text with a specified character style into clickable hyperlinks. URL is taken directly from the text content.
 
 *More scripts coming soon.*
 
