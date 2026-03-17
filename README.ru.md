@@ -13,6 +13,14 @@
 
 *Новые скрипты появятся позже.*
 
+## Установка
+1. Скачайте файл скрипта с расширением `.jsx`.
+2. Поместите его в папку скриптов InDesign:
+   - **Windows:** `%appdata%\Adobe\InDesign\Version [X]\ru_RU\Scripts\Scripts Panel`
+   - **macOS:** `~/Library/Preferences/Adobe InDesign/Version [X]/ru_RU/Scripts/Scripts Panel`
+   
+> **Совет:** Чтобы быстро найти нужную папку, откройте панель «Скрипты» в InDesign (Window > Utilities > Scripts), нажмите правой кнопкой мыши на папку «User» и выберите **Reveal in Explorer** (Windows) или **Reveal in Finder** (macOS).
+
 ## Развитие
 Нашли ошибку? [Создайте запрос](https://github.com/vladossipov/indesign-scripts/issues) на GitHub или напишите мне на почту.
 

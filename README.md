@@ -15,6 +15,12 @@ Automatically assembles inline graphics and their caption paragraphs into a prop
 
 *More scripts coming soon.*
 
+## Installation
+1. Download the `.jsx` file.
+2. Place it in the InDesign Scripts folder:
+   - **Win:** `%appdata%\Adobe\InDesign\Version [X]\en_US\Scripts\Scripts Panel`
+   - **Mac:** `~/Library/Preferences/Adobe InDesign/Version [X]/en_US/Scripts/Scripts Panel`
+
 ## Feedback
 Found a bug? [Open an issue](https://github.com/vladossipov/indesign-scripts/issues) on GitHub or email me.
 
