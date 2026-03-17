@@ -23,7 +23,7 @@
   Released under the MIT License
   http://opensource.org/licenses/mit-license.php
 
-  © 2026 Vlad Ossipov | vladossipov.ru | github.com/vladossipov/CharStyle2Hyperlink
+  © 2026 Vlad Ossipov | vladossipov.ru | github.com/vladossipov/indesign-scripts/tree/master/CharStyle2Hyperlink
 
 */
 

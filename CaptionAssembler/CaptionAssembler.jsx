@@ -24,7 +24,7 @@
   Released under the MIT License
   http://opensource.org/licenses/mit-license.php
 
-  © 2026 Vlad Ossipov | github.com/vladossipov/CaptionAssembler
+  © 2026 Vlad Ossipov | github.com/vladossipov/indesign-scripts/tree/master/CaptionAssembler
 
 */
 
