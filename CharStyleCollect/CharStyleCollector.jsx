@@ -22,24 +22,23 @@
 
 */
 
-
 (function () {
 
     var VERSION = "1.0";
 
-    // ─── Проверка документа ───────────────────────────────────────────────────
+    // ─── Document check ───────────────────────────────────────────────────
     if (app.documents.length === 0) {
-        alert("Нет открытых документов.");
+        alert("No documents are open.");
         return;
     }
 
     var doc = app.activeDocument;
 
-    // ─── Получаем список символьных стилей ────────────────────────────────────
+    // ─── Get list of character styles ────────────────────────────────────
     var styles = doc.characterStyles;
 
     if (styles.length <= 1) {
-        alert("В документе нет символьных стилей.");
+        alert("The document has no character styles.");
         return;
     }
 
@@ -50,7 +49,7 @@
         }
     }
 
-    // ─── Диалог ───────────────────────────────────────────────────────────────
+    // ─── Dialog ───────────────────────────────────────────────────────────
     var result = showDialog(styleNames);
     if (!result) { return; }
 
@@ -60,7 +59,7 @@
     var onlyUnique      = result.onlyUnique;
     var caseSensitive   = result.caseSensitive;
 
-    // ─── Поиск слов ──────────────────────────────────────────────────────────
+    // ─── Word search ──────────────────────────────────────────────────────
     var collectedWords = [];
     var seenWords      = {};
     var stories        = doc.stories;
@@ -75,8 +74,7 @@
             var ch        = chars[c];
             var charValue = ch.contents;
 
-
-            // Пропускаем служебные объекты InDesign
+            // Skip InDesign special objects
             if (typeof charValue !== "string" || charValue.length !== 1) { continue; }
 
             var hasStyle = (ch.appliedCharacterStyle.name === targetStyleName);
@@ -112,11 +110,11 @@
     }
 
     if (collectedWords.length === 0) {
-        alert("Слова со стилем «" + targetStyleName + "» не найдены.");
+        alert("No words found with style \u00AB" + targetStyleName + "\u00BB.");
         return;
     }
 
-    // ─── Создаём текстовый фрейм ─────────────────────────────────────────────
+    // ─── Create text frame ─────────────────────────────────────────────
     var resultText = collectedWords.join(separator);
 
     var page = doc.pages[0];
@@ -136,21 +134,21 @@
 
     app.activeWindow.activePage = page;
 
-    alert("Готово!\n" +
-          "Найдено слов: " + collectedWords.length + "\n" +
-          "Стиль: «" + targetStyleName + "»\n" +
-          "Разделитель: «" + separatorRaw + "»");
+    alert("Done!\n" +
+          "Words found: " + collectedWords.length + "\n" +
+          "Style: \u00AB" + targetStyleName + "\u00BB\n" +
+          "Separator: \u00AB" + separatorRaw + "\u00BB");
 
 
     // ════════════════════════════════════════════════════════════════════════
-    //  ScriptUI Диалог
+    //  ScriptUI Dialog
     // ════════════════════════════════════════════════════════════════════════
 
     function showDialog(charStyleNames) {
 
         var DD_W = 200;
 
-        var dlg = new Window("dialog", "CharStyleCollector v" + VERSION);
+        var dlg = new Window("dialog", "CharStyleCollect v" + VERSION);
         dlg.orientation   = "column";
         dlg.alignChildren = ["fill", "top"];
         dlg.spacing       = 12;
@@ -195,7 +193,7 @@
         var cbCase = optPanel.add("checkbox", undefined, "Case sensitive (deduplication)");
         cbCase.value = false;
 
-        // ── Кнопки ────────────────────────────────────────────────────────
+        // ── Buttons ────────────────────────────────────────────────────────
         var btnGroup = dlg.add("group");
         btnGroup.orientation = "row";
         btnGroup.alignment   = "right";
@@ -205,7 +203,7 @@
         var btnOk     = btnGroup.add("button", undefined, "Run",    { name: "ok"     });
         btnOk.active  = true;
 
-        // ── Футер ─────────────────────────────────────────────────────────
+        // ── Footer ─────────────────────────────────────────────────────────
         var divider = dlg.add("panel");
         divider.alignment            = "fill";
         divider.preferredSize.height = 1;
@@ -234,7 +232,7 @@
             }
         });
 
-        // ── Запуск ────────────────────────────────────────────────────────
+        // ── Run ────────────────────────────────────────────────────────
         var res = dlg.show();
 
         if (res !== 1) { return null; }
@@ -248,7 +246,7 @@
     }
 
 
-    // ─── Вспомогательные функции ─────────────────────────────────────────────
+    // ─── Helper functions ─────────────────────────────────────────────────
 
     function pushWord(word, arr, seen, unique, caseSens) {
         var key = caseSens ? word : word.toLowerCase();
